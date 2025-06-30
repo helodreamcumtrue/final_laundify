@@ -1,0 +1,171 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Order Tracking | Laundrify</title>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   <style>
+     * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+     }
+     body {
+       font-family: 'Poppins', sans-serif;
+       background-color: #F9FAFB;
+       color: #111827;
+     }
+     nav {
+       background-color: #0D4485;
+       color: white;
+       padding: 16px 32px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+     }
+     .nav-logo {
+       font-size: 20px;
+       font-weight: 700;
+     }
+     .nav-links a {
+       color: white;
+       text-decoration: none;
+       margin-left: 20px;
+       font-weight: 500;
+       transition: color 0.3s ease;
+     }
+     .nav-links a:hover {
+       color: #E0E7FF;
+     }
+     .page {
+       max-width: 960px;
+       margin: 0 auto;
+       padding: 20px;
+     }
+     .page h1 {
+       font-size: 28px;
+       font-weight: 700;
+       margin-bottom: 10px;
+     }
+     .page p {
+       font-size: 16px;
+       color: #4B5563;
+       margin-bottom: 24px;
+     }
+     .order-box {
+       background-color: white;
+       border-radius: 8px;
+       padding: 24px;
+       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+       border: 1px solid #E5E7EB;
+       margin-bottom: 24px;
+     }
+     .order-header {
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: 8px;
+     }
+     .order-id {
+       font-weight: 700;
+       color: #0D4485;
+     }
+     .order-status {
+       font-size: 14px;
+       background-color: #F3E8FF;
+       color: #6B21A8;
+       padding: 4px 10px;
+       border-radius: 9999px;
+     }
+     .progress-bar-container {
+       background-color: #E2E8F0;
+       border-radius: 9999px;
+       overflow: hidden;
+       height: 8px;
+       margin: 12px 0;
+     }
+     .progress-bar {
+       background-color: #0D4485;
+       height: 100%;
+       width: 60%;
+     }
+     .status-steps {
+       display: flex;
+       justify-content: space-between;
+       font-size: 12px;
+       color: #6B7280;
+     }
+     .status-steps .active {
+       color: #1E40AF;
+       font-weight: 600;
+     }
+     .back-button {
+       display: inline-block;
+       margin-top: 20px;
+       padding: 10px 16px;
+       background-color: #0D4485;
+       color: white;
+       text-decoration: none;
+       border-radius: 6px;
+     }
+     .back-button:hover {
+       background-color: #093668;
+     }
+   </style>
+ </head>
+ <body>
+   <nav>
+     <div class="nav-logo">Laundrify</div>
+     <div class="nav-links">
+       <a href="/dashboard.html">Dashboard</a>
+       <a href="/slot-booking.html">Slot Booking</a>
+       <a href="/profile.html">Profile</a>
+       <a href="/feedback.html">Feedback</a>
+     </div>
+   </nav>
+ 
+   <div class="page">
+     <h1>Track Your Orders</h1>
+     <p>Real-time status updates for your laundry requests.</p>
+ 
+     <div class="order-box">
+       <div class="order-header">
+         <span class="order-id">Request #LR001</span>
+         <span class="order-status">Washing</span>
+       </div>
+       <div class="progress-bar-container">
+         <div class="progress-bar"></div>
+       </div>
+       <div class="status-steps">
+         <span>Pending</span>
+         <span>Picked Up</span>
+         <span class="active">Washing</span>
+         <span>Drying</span>
+         <span>Ready</span>
+         <span>Delivered</span>
+       </div>
+     </div>
+ 
+     <div class="order-box">
+       <div class="order-header">
+         <span class="order-id">Request #LR002</span>
+         <span class="order-status">Drying</span>
+       </div>
+       <div class="progress-bar-container">
+         <div class="progress-bar" style="width: 80%;"></div>
+       </div>
+       <div class="status-steps">
+         <span>Pending</span>
+         <span>Picked Up</span>
+         <span>Washing</span>
+         <span class="active">Drying</span>
+         <span>Ready</span>
+         <span>Delivered</span>
+       </div>
+     </div>
+ 
+     <a class="back-button" href="/Client/frontend/Dashboard.html">← Back to Dashboard</a>
+   </div>
+ </body>
+ </html>
+ 

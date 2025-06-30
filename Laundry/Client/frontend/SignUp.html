@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up | Laundrify</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-blue-100 via-white to-blue-100 flex items-center justify-center font-poppins">
+  <div class="bg-white shadow-lg rounded-lg w-full max-w-md p-8 space-y-6">
+    <h1 class="text-3xl font-bold text-center text-blue-900">LAUNDRIFY</h1>
+    <p class="text-center text-gray-600">Join our laundry management system</p>
+    <form class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Full Name</label>
+        <input type="text" placeholder="Enter your full name"
+               class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500"/>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" placeholder="your@email.com"
+               class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500"/>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" placeholder="Create a password"
+               class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500"/>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Role</label>
+        <select class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500">
+          <option>Select your role</option>
+          <option value="student">Student</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Hostel Block/Floor</label>
+        <input type="text" placeholder="e.g., Block A, Floor 2"
+               class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500"/>
+      </div>
+      <button type="submit"
+              class="w-full bg-blue-800 hover:bg-blue-900 text-white font-semibold py-2 rounded-md transition duration-200">
+        Sign Up
+      </button>
+    </form>
+    <p class="text-center text-sm text-gray-600">
+      Already have an account? 
+      <a href="Login.html" class="text-blue-700 font-medium hover:underline">Log in</a>
+    </p>
+  </div>
+</body>
+</html>

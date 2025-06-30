@@ -1,0 +1,40 @@
+ laundry-app/
+ ├── backend/
+ │   ├── config/
+ │   │   └── db.js              # MongoDB connection
+ │   ├── controllers/
+ │   │   ├── authController.js  # Login, signup
+ │   │   ├── bookingController.js
+ │   │   ├── adminController.js
+ │   │   └── feedbackController.js
+ │   ├── models/
+ │   │   ├── User.js
+ │   │   ├── Booking.js
+ │   │   ├── Feedback.js
+ │   │   └── ClothStatus.js
+ │   ├── routes/
+ │   │   ├── auth.js
+ │   │   ├── bookings.js
+ │   │   ├── admin.js
+ │   │   └── feedback.js
+ │   ├── middleware/
+ │   │   └── authMiddleware.js  # Protect routes (JWT) 
+ │   ├── .env
+ │   ├── server.js              # Entry point
+ │   └── package.json
+ │
+ ├── frontend/
+ │   ├── index.html
+ │   ├── login.html
+ │   ├── signup.html
+ │   ├── dashboard.html
+ │   ├── book-slot.html
+ │   ├── booking-confirmation.html
+ │   ├── barcode.html
+ │   ├── feedback.html
+ │   ├── admin-dashboard.html
+ │   ├── admin-feedback.html
+ │   ├── status-update.html
+ │   ├── profile-user.html
+ │   └── profile-admin.html
+ 

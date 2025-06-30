@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laundrify</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-b from-blue-100 via-white to-blue-100 min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-md bg-white shadow-lg rounded-lg overflow-hidden">
+      <div class="p-8">
+        <h1 class="text-3xl font-bold text-center text-blue-900">LAUNDRIFY</h1>
+        <p class="text-center text-gray-600 mt-2">Your laundry management solution</p>
+        <div class="mt-6 bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-xl font-semibold text-center text-gray-900">Sign in</h3>
+          <p class="text-sm text-center text-gray-500 mt-1">Enter your email and password to access your account</p>
+          <form class="mt-6 space-y-4">
+            <div>
+              <label class="block text-sm text-gray-700">Email</label>
+              <input type="email" placeholder="your@email.com" class="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            </div>
+            <div>
+              <label class="block text-sm text-gray-700">Password</label>
+              <input type="password" placeholder="Enter your password" class="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            </div>
+           <a href="Dashboard.html" class="w-full bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition text-center block">
+  Sign in
+</a>
+          </form>
+          <div class="text-sm text-center text-gray-600 mt-4">
+            Don't have an account?
+            <a href="SignUp.html" class="text-blue-700 font-medium">Sign up</a>
+          </div>
+          <div class="bg-gray-50 p-4 mt-6 rounded-lg">
+            <p class="text-xs text-gray-500">Demo accounts:</p>
+            <p class="text-xs text-gray-600">Student: student@example.com</p>
+            <p class="text-xs text-gray-600">Admin: admin@example.com</p>
+            <p class="text-xs text-gray-600">Password: demo123</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

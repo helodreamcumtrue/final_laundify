@@ -1,0 +1,114 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Dashboard | Laundrify</title>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   <style>
+     * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+     }
+     body {
+       font-family: 'Poppins', sans-serif;
+       background-color: #F9FAFB;
+       color: #111827;
+     }
+     nav {
+       background-color: #0D4485;
+       color: white;
+       padding: 16px 32px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+     }
+     .nav-logo {
+       font-size: 20px;
+       font-weight: 700;
+     }
+     .nav-links a {
+       color: white;
+       text-decoration: none;
+       margin-left: 20px;
+       font-weight: 500;
+       transition: color 0.3s ease;
+     }
+     .nav-links a:hover {
+       color: #E0E7FF;
+     }
+     .dashboard {
+       max-width: 960px;
+       margin: 0 auto;
+       padding: 20px;
+     }
+     .dashboard h1 {
+       font-size: 28px;
+       font-weight: 700;
+       margin-bottom: 10px;
+     }
+     .dashboard p {
+       font-size: 16px;
+       color: #4B5563;
+       margin-bottom: 24px;
+     }
+     .stats-grid {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+       gap: 20px;
+     }
+     .card {
+       background-color: white;
+       padding: 20px;
+       border-radius: 8px;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+       border: 1px solid #E5E7EB;
+     }
+     .card h2 {
+       font-size: 18px;
+       margin-bottom: 8px;
+       color: #0D4485;
+     }
+     .card p {
+       font-size: 14px;
+       color: #6B7280;
+     }
+   </style>
+ </head>
+ <body>
+   <nav>
+     <div class="nav-logo">Laundrify</div>
+     <div class="nav-links">
+       <a href="/Client/frontend/BookSlot.html">Slot Booking</a>
+       <a href="/Client/frontend/Profile.html">Profile</a>
+       <a href="/Client/frontend/Track.html">Track Order</a>
+     </div>
+   </nav>
+ 
+   <div class="dashboard">
+     <h1>Welcome to Your Dashboard</h1>
+     <p>Manage your laundry, track orders, and more.</p>
+ 
+     <div class="stats-grid">
+       <div class="card">
+         <h2>Total Orders</h2>
+         <p>23</p>
+       </div>
+       <div class="card">
+         <h2>Pending Pickup</h2>
+         <p>3</p>
+       </div>
+       <div class="card">
+         <h2>In Progress</h2>
+         <p>2</p>
+       </div>
+       <div class="card">
+         <h2>Completed</h2>
+         <p>18</p>
+       </div>
+     </div>
+   </div>
+ </body>
+ </html>
+ 
